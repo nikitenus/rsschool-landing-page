@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Italic (Курсив) */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* 3. SemiBold (Полужирный) */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  /* 600 — это стандартное цифровое значение для SemiBold */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 4. SemiBold Italic (Полужирный курсив) */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.button {
+  border: 0;
+  border-radius: 100px;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 100px;
+  height: 60px;
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+}
+
+.menu__list-link {
+  transition: color 0.2s ease;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.theme-switch {
+  display: flex;
+  gap: 8px;
+  padding: 3px;
+  border: 1px solid var(--border-primary);
+  border-radius: 100px;
+}
+
+.theme-switch__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.theme-switch__label {
+  display: flex;
+  padding: 8px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.theme-switch__input:checked + .theme-switch__label {
+  background-color: var(--text-accent);
+}
+
+.theme-switch__icon--sun {
+  width: 22px;
+  height: 22px;
+  fill: var(--text-inverse);
+}
+
+.theme-switch__icon--moon {
+  width: 18px;
+  height: 18px;
+  fill: var(--text-primary);
+}
+
+.header__menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+}
+
+.header__menu-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: var(--text-primary);
+}
+
+.hero {
+  background-image: url("../assets/images/hero.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  color: var(--text-inverse);
+  border-radius: 40px;
+}
+
+.hero__content {
+  inline-size: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 100px;
+}
+
+.hero__title {
+  line-height: 105%;
+  font-size: 72px;
+}
+
+.hero__button {
+  align-self: flex-start;
+  padding: 20px 78px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.title .accent {
+  font-style: italic;
+  color: var(--text-accent);
+}
