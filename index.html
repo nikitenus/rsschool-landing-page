@@ -12,22 +12,22 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="./assets/images/logo.svg" alt="logo" />
         </a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link">Favorite coffee</a>
+              <a href="index.html#favorite" class="menu__list-link">Favorite coffee</a>
             </li>
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link">About</a>
+              <a href="index.html#about" class="menu__list-link">About</a>
             </li>
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link">Mobile app</a>
+              <a href="index.html#mobile-app" class="menu__list-link">Mobile app</a>
             </li>
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link">Contact us</a>
+              <a href="index.html#contact-us" class="menu__list-link">Contact us</a>
             </li>
           </ul>
         </nav>
@@ -47,7 +47,7 @@
               </svg>
             </label>
           </div>
-          <a href="#" class="header__menu-link">
+          <a href="menu.html" class="header__menu-link">
             <span>Menu</span>
             <svg class="header__menu-icon">
               <use href="./assets/icons/sprites.svg#cup-icon"></use>
@@ -64,7 +64,12 @@
               destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
               beverage.
             </p>
-            <button class="button hero__button">Menu</button>
+            <a href="menu.html" class="button hero__button">
+              <span>Menu</span>
+              <svg class="hero__button-icon">
+                <use href="./assets/icons/sprites.svg#cup-icon"></use>
+              </svg>
+            </a>
           </div>
         </section>
         <section class="slider" id="favorite">
@@ -191,16 +196,20 @@
             <h3 class="footer__contacts-title title">Contact us</h3>
             <ul class="footer__list">
               <li class="footer__item">
-                <svg class="footer__icon footer__icon--map">
-                  <use href="./assets/icons/sprites.svg#map-icon"></use>
-                </svg>
-                <span>8558 Green Rd., LA</span>
+                <a class="footer__link" href="#">
+                  <svg class="footer__icon footer__icon--map">
+                    <use href="./assets/icons/sprites.svg#map-icon"></use>
+                  </svg>
+                  <span>8558 Green Rd., LA</span>
+                </a>
               </li>
               <li class="footer__item">
-                <svg class="footer__icon footer__icon--phone">
-                  <use href="./assets/icons/sprites.svg#phone-icon"></use>
-                </svg>
-                <span>+1 (603) 555-0123</span>
+                <a class="footer__link" href="tel:+16035550123">
+                  <svg class="footer__icon footer__icon--phone">
+                    <use href="./assets/icons/sprites.svg#phone-icon"></use>
+                  </svg>
+                  <span>+1 (603) 555-0123</span>
+                </a>
               </li>
               <li class="footer__item">
                 <svg class="footer__icon footer__icon--clock">
