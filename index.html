@@ -10,56 +10,52 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="logo" />
-          </a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Favorite coffee</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__list-link">About</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Mobile app</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__actions">
-            <div class="theme-switch">
-              <input class="theme-switch__input" type="radio" name="theme" id="theme-light" value="light" checked />
-              <label class="theme-switch__label" for="theme-light">
-                <svg class="theme-switch__icon theme-switch__icon--sun">
-                  <use href="./assets/icons/sprites.svg#sun-icon"></use>
-                </svg>
-              </label>
-
-              <input class="theme-switch__input" type="radio" name="theme" id="theme-dark" value="dark" />
-              <label class="theme-switch__label" for="theme-dark">
-                <svg class="theme-switch__icon theme-switch__icon--moon">
-                  <use href="./assets/icons/sprites.svg#moon-icon"></use>
-                </svg>
-              </label>
-            </div>
-            <a href="#" class="header__menu-link">
-              <span>Menu</span>
-              <svg class="header__menu-icon">
-                <use href="./assets/icons/sprites.svg#cup-icon"></use>
+    <div class="wrapper">
+      <header class="header">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">Favorite coffee</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">Mobile app</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <div class="theme-switch">
+            <input class="theme-switch__input" type="radio" name="theme" id="theme-light" value="light" checked />
+            <label class="theme-switch__label" for="theme-light">
+              <svg class="theme-switch__icon theme-switch__icon--sun">
+                <use href="./assets/icons/sprites.svg#sun-icon"></use>
               </svg>
-            </a>
+            </label>
+
+            <input class="theme-switch__input" type="radio" name="theme" id="theme-dark" value="dark" />
+            <label class="theme-switch__label" for="theme-dark">
+              <svg class="theme-switch__icon theme-switch__icon--moon">
+                <use href="./assets/icons/sprites.svg#moon-icon"></use>
+              </svg>
+            </label>
           </div>
+          <a href="#" class="header__menu-link">
+            <span>Menu</span>
+            <svg class="header__menu-icon">
+              <use href="./assets/icons/sprites.svg#cup-icon"></use>
+            </svg>
+          </a>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
+      </header>
+      <main class="main">
         <section class="hero">
           <div class="hero__content">
             <h1 class="hero__title title"><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
@@ -71,7 +67,7 @@
             <button class="button hero__button">Menu</button>
           </div>
         </section>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
