@@ -333,3 +333,59 @@ body {
 .about__image--4 {
   grid-area: img4;
 }
+
+.mobile-app {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+
+.mobile-app__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-app__downloads {
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-app__download {
+  border: 1px solid var(--border-primary);
+  padding: 10px 20px;
+  inline-size: 200px;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.mobile-app__label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.mobile-app__icon--apple {
+  inline-size: 27px;
+  block-size: 32px;
+  fill: var(--text-primary);
+}
+
+.mobile-app__icon--google {
+  inline-size: 31px;
+  block-size: 33px;
+  fill: var(--text-primary);
+}
+
+.mobile-app__caption {
+  font-size: 10px;
+  line-height: 140%;
+}
+
+.mobile-app__image {
+  inline-size: 100%;
+  max-inline-size: 630px;
+  block-size: 100%;
+}
