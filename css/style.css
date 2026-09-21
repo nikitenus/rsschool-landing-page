@@ -290,3 +290,46 @@ body {
 .slider__indicator--active {
   background-color: var(--border-inverse);
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.about__images {
+  inline-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 430px 120px 430px;
+  gap: 40px;
+  grid-template-areas:
+    "img1 img3"
+    "img1 img4"
+    "img2 img4";
+}
+
+.about__image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  object-position: center;
+}
+
+.about__image--1 {
+  grid-area: img1;
+}
+
+.about__image--2 {
+  grid-area: img2;
+}
+
+.about__image--3 {
+  grid-area: img3;
+}
+
+.about__image--4 {
+  grid-area: img4;
+}
