@@ -37,26 +37,26 @@
           <div class="theme-switch">
             <input class="theme-switch__input" type="radio" name="theme" id="theme-light" value="light" checked />
             <label class="theme-switch__label" for="theme-light">
-              <svg class="theme-switch__icon theme-switch__icon--sun">
+              <svg class="theme-switch__icon theme-switch__icon--sun" aria-hidden="true">
                 <use href="./assets/icons/sprites.svg#sun-icon"></use>
               </svg>
             </label>
 
             <input class="theme-switch__input" type="radio" name="theme" id="theme-dark" value="dark" />
             <label class="theme-switch__label" for="theme-dark">
-              <svg class="theme-switch__icon theme-switch__icon--moon">
+              <svg class="theme-switch__icon theme-switch__icon--moon" aria-hidden="true">
                 <use href="./assets/icons/sprites.svg#moon-icon"></use>
               </svg>
             </label>
           </div>
           <a href="menu.html" class="header__menu-link">
             <span>Menu</span>
-            <svg class="header__menu-icon">
+            <svg class="header__menu-icon" aria-hidden="true">
               <use href="./assets/icons/sprites.svg#cup-icon"></use>
             </svg>
           </a>
-          <button class="button header__burger" type="button" aria-label="Open menu">
-            <svg class="header__burger-icon">
+          <button class="button header__burger" type="button">
+            <svg class="header__burger-icon" aria-hidden="true">
               <use href="./assets/icons/sprites.svg#burger-icon"></use>
             </svg>
           </button>
@@ -158,21 +158,36 @@
               Sip, Savor, Smile. <span class="accent">It's coffee time!</span>
             </h2>
             <div class="footer__socials">
-              <button class="button footer__social" type="button" aria-label="Twitter">
-                <svg class="footer__social-icon">
+              <a
+                class="button footer__social"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer__social-icon" aria-hidden="true">
                   <use href="./assets/icons/sprites.svg#twitter-icon"></use>
                 </svg>
-              </button>
-              <button class="button footer__social" type="button" aria-label="Instagram">
-                <svg class="footer__social-icon">
+              </a>
+              <a
+                class="button footer__social"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer__social-icon" aria-hidden="true">
                   <use href="./assets/icons/sprites.svg#instagram-icon"></use>
                 </svg>
-              </button>
-              <button class="button footer__social" type="button" aria-label="Facebook">
-                <svg class="footer__social-icon">
+              </a>
+              <a
+                class="button footer__social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer__social-icon" aria-hidden="true">
                   <use href="./assets/icons/sprites.svg#facebook-icon"></use>
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           <div class="footer__contacts">
@@ -180,7 +195,7 @@
             <ul class="footer__list">
               <li class="footer__item">
                 <a class="footer__link" href="#">
-                  <svg class="footer__icon footer__icon--map">
+                  <svg class="footer__icon footer__icon--map" aria-hidden="true">
                     <use href="./assets/icons/sprites.svg#map-icon"></use>
                   </svg>
                   <span>8558 Green Rd., LA</span>
@@ -188,14 +203,14 @@
               </li>
               <li class="footer__item">
                 <a class="footer__link" href="tel:+16035550123">
-                  <svg class="footer__icon footer__icon--phone">
+                  <svg class="footer__icon footer__icon--phone" aria-hidden="true">
                     <use href="./assets/icons/sprites.svg#phone-icon"></use>
                   </svg>
                   <span>+1 (603) 555-0123</span>
                 </a>
               </li>
               <li class="footer__item">
-                <svg class="footer__icon footer__icon--clock">
+                <svg class="footer__icon footer__icon--clock" aria-hidden="true">
                   <use href="./assets/icons/sprites.svg#clock-icon"></use>
                 </svg>
                 <span>Mon-Sat: 9:00-23:00</span>
