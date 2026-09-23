@@ -395,6 +395,12 @@ body {
   object-fit: cover;
   border-radius: 20px;
   object-position: center;
+  object-view-box: inset(5%);
+  transition: object-view-box 0.3s ease-in-out;
+}
+
+.about__image:hover {
+  object-view-box: inset(0%);
 }
 
 .about__image--1 {
