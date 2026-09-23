@@ -703,6 +703,22 @@ body {
   font-weight: 600;
 }
 
+.catalogue__more {
+  display: none;
+  inline-size: 60px;
+  block-size: 60px;
+  padding: 0;
+  border: 1px solid var(--border-inverse);
+  background-color: transparent;
+}
+
+.catalogue__more-icon {
+  inline-size: 24px;
+  block-size: 24px;
+  fill: none;
+  stroke: var(--text-primary);
+}
+
 @media (max-width: 768px) {
   .header {
     justify-content: space-between;
@@ -760,6 +776,18 @@ body {
 
   .catalogue__cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalogue__more {
+    display: flex;
+  }
+
+  .catalogue__cards:not(.catalogue__cards--expanded) .catalogue__card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .catalogue__cards--expanded ~ .catalogue__more {
+    display: none;
   }
 }
 

@@ -9,4 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     html.dataset.theme = theme = target.value;
     localStorage.setItem("theme", target.value);
   });
+
+  const moreButton = document.querySelector(".catalogue__more");
+  const cards = document.querySelector(".catalogue__cards");
+
+  if (moreButton && cards) {
+    moreButton.addEventListener("click", () => {
+      cards.classList.add("catalogue__cards--expanded");
+    });
+  }
 });
