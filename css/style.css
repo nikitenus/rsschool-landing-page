@@ -57,7 +57,7 @@ body {
   font-weight: 400;
   line-height: 150%;
   color: var(--text-primary);
-  background-color: #fff;
+  background-color: var(--bg-page);
 }
 
 .wrapper {
@@ -66,7 +66,6 @@ body {
   max-inline-size: 1440px;
   min-block-size: 100dvh;
   margin: 0 auto;
-  background-color: var(--bg-page);
 }
 
 .button {
@@ -338,7 +337,9 @@ body {
   block-size: 60px;
   border: 1px solid var(--border-primary);
   padding: 0;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .slider__arrow:hover {
@@ -436,7 +437,10 @@ body {
   inline-size: 200px;
   justify-content: flex-start;
   gap: 12px;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .mobile-app__download:hover {
@@ -516,7 +520,9 @@ body {
   padding: 0;
   background-color: var(--bg-container);
   border: 1px solid var(--border-primary);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .footer__social:hover {
@@ -611,7 +617,10 @@ body {
   color: var(--text-primary);
   font-size: 16px;
   line-height: 150%;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .catalogue__filter:hover,
