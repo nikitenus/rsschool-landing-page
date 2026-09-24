@@ -323,6 +323,12 @@ body {
   font-size: 24px;
 }
 
+.slider__about-price {
+  line-height: 125%;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .slider__about-description {
   text-align: center;
 }
